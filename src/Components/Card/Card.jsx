@@ -19,6 +19,7 @@ const Card = ({ name, especie, gender, image, id }) => {
         <h1>Especie: {especie}</h1>
         <h1>Gender: {gender}</h1>
         <img src={image}></img>
+        <h3>{id}</h3>
       </div>
     </>
   );

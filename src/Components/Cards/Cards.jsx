@@ -10,7 +10,7 @@ const Cards = () => {
 
   useEffect(() => {dispatch(getCharacters())},[]);
 
-  const characters = useSelector((state) => state.characters);
+  const characters = useSelector((state) => state.characterFilter);
   return (
     <div className={Style.card}>
       {characters?.map((character) => (

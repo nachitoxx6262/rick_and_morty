@@ -1,30 +1,9 @@
 .App {
   text-align: center;
-  background: linear-gradient(275deg, #0f02ff, #030a8e);
-  background-size: 100%;
-
-  -webkit-animation: AnimationName 0s ease infinite;
-  -moz-animation: AnimationName 0s ease infinite;
-  animation: AnimationName 0s ease infinite;
-
-
-
-}
-
-
-
-@-webkit-keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+  background-color: #030328;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #360f66 0%,
+    rgba(54, 15, 102, 0) 100%
+  )
 }
