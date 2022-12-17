@@ -17,12 +17,13 @@ const rootReducer = (state = initialState, actions) => {
     case CLOSE_CHARACTER:
       return{
         ...state,
-        characterFilter: state.characterFilter.filter((character) => character.id !== actions.payload) 
+        characters: state.characters.filter((character) => character.id !== actions.payload),
+        characterFilter: state.characters
       };
     case SEARCH_CHARACTER:
       return{
         ...state,
-        characterFilter: state.characterFilter.filter((character) => character.id == actions.payload) 
+        characterFilter: state.characters.filter((character) => character.id == actions.payload) 
       }
     case RENDER:
       return{

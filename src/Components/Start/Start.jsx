@@ -1,9 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { connect, useDispatch, useSelector } from "react-redux";
+import { useDispatch} from "react-redux";
+import { useEffect } from "react";
+import { getCharacters } from "../../Redux/actions";
 import Style from "./Start.module.css";
 
 const Start = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {dispatch(getCharacters())},[]);
   return (
     <div className={Style.div}>
       <div className={Style.background}>

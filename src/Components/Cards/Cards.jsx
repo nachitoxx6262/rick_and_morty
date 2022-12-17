@@ -6,9 +6,7 @@ import { connect, useDispatch, useSelector } from "react-redux";
 import { getCharacters } from "../../Redux/actions";
 
 const Cards = () => {
-  const dispatch = useDispatch();
-
-  useEffect(() => {dispatch(getCharacters())},[]);
+  
 
   const characters = useSelector((state) => state.characterFilter);
   return (
