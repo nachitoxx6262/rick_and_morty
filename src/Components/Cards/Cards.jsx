@@ -6,8 +6,6 @@ import { connect, useDispatch, useSelector } from "react-redux";
 import { getCharacters } from "../../Redux/actions";
 
 const Cards = () => {
-  
-
   const characters = useSelector((state) => state.characterFilter);
   return (
     <div className={Style.card}>

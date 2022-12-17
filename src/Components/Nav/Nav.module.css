@@ -38,6 +38,7 @@
   padding: 0.5rem;
 }
 .boton {
+  cursor: pointer;
   border-color: aqua;
   color: aquamarine;
   background-color: blueviolet;

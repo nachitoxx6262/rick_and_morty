@@ -1,4 +1,4 @@
-import { GET_CHARACTER,CLOSE_CHARACTER,SEARCH_CHARACTER,RENDER } from "./actions";
+import { GET_CHARACTER,CLOSE_CHARACTER,SEARCH_CHARACTER,RENDER,CREATE_CHARACTER } from "./actions";
 
 const initialState = {
   characters: [],
@@ -29,6 +29,11 @@ const rootReducer = (state = initialState, actions) => {
       return{
       ...state,
       characterFilter: state.characters}
+    case CREATE_CHARACTER:
+      return{
+        ...state,
+        characterFilter: [...state.characterFilter,actions.payload]
+      }
     default:
       return {
         ...state,

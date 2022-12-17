@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 .card {
+  cursor: pointer;
   padding: 1rem;
   border-color: rgba(7, 242, 242, 0);
   border-radius: 3px;
